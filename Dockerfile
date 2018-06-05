@@ -45,6 +45,7 @@ RUN mkdir -p /opt/Cake/Cake \
     && unzip -q Cake.zip -d "/opt/Cake/Cake" \
     && rm -f Cake.zip \
     && chmod 755 /usr/bin/cake \
+    && sync \
     && mkdir caketest \
     && cd caketest \
     && cake --version \
